@@ -28,3 +28,6 @@ function c() {
 c()
 
 
+//Garbage Collections
+//removing event listeners
+//heavy -> more memory usage 
