@@ -15,10 +15,16 @@ a(function b() {
     console.log('b');
 })
 
-function c () {
-    console.log("clicked button 123")
+//closure, lexical scope, event listeners, callback function
+function c() {
+    let count = 0
+    let d = 1
+    document.getElementById('click').addEventListener('click',function() {
+        console.log("clicked button 123",count++)
+        console.log(d++)
+    }) 
 } 
 
-document.getElementById('click').addEventListener('click',c) 
+c()
 
 
